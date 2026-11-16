@@ -1,13 +1,115 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ======================================================================= -->
+    <!-- ARITHMO-EDGE: GOLDEN QUESTION BANK JSON GENERATOR — METADATA & OG SUITE -->
+    <!-- ======================================================================= -->
 
-    <title>
-      Arithmo-Edge: Golden Question Bank JSON Generator
-    </title>
-    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <!-- 1. Core Encoding, Viewport & Primary SEO Metadata -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Official Co-Founders' authoring studio for compiling 10-problem Expert Olympiad sets into Schema v1.2 JSON payloads across Number Theory, Algebra, Geometry, Combinatorics, and Mixed Mathematical Olympiad arenas with automated LaTeX conversion and single-value answer validation."
+    />
+    <meta
+      name="keywords"
+      content="Arithmo-Edge, Olympiad Edge, Golden Question Bank, JSON Generator, Olympiad Math Authoring, LaTeX Math Compiler, Number Theory, Algebra, Geometry, Combinatorics, Mixed Mathematical Olympiad, Expert Segment Vault, Rayaan Tasnim"
+    />
+    <meta
+      name="author"
+      content="Rayaan Tasnim — Founder & Chief System Architect, Arithmo-Edge"
+    />
+    <meta name="creator" content="Rayaan Tasnim" />
+    <meta name="publisher" content="Arithmo-Edge (Powered by Olympiad Edge)" />
+    <meta name="copyright" content="© Arithmo-Edge. All Rights Reserved." />
+
+    <!-- 2. Search Engine Indexing & Security Directives (Private Internal Authoring Tool) -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- 3. Cyber-Olympiad Browser Chrome & PWA App Capabilities -->
+    <meta
+      name="application-name"
+      content="Arithmo-Edge Golden JSON Vault Generator"
+    />
+    <meta name="apple-mobile-web-app-title" content="Arithmo JSON Forge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#0B0F19" />
+    <meta name="msapplication-TileColor" content="#0B0F19" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- 4. Open Graph (OG) Protocol Metadata (No Image Tags Included) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="Arithmo-Edge — Powered by Olympiad Edge"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:title"
+      content="Arithmo-Edge: Golden Question Bank JSON Generator (Schema v1.2)"
+    />
+    <meta
+      property="og:description"
+      content="Compile 10-question Expert Olympiad problem sets with per-problem unrated tags, automated plain-to-LaTeX equation formatting, and deterministic single-value answers into standardized Arithmo-Edge Golden Vault JSON files."
+    />
+    <meta property="og:url" content="https://github.io" />
+
+    <!-- 5. Twitter / X Card Metadata (Text Summary Card — No Image Tags Included) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ArithmoEdge" />
+    <meta name="twitter:creator" content="@RayaanTasnim" />
+    <meta
+      name="twitter:title"
+      content="Arithmo-Edge: Golden Question Bank JSON Generator"
+    />
+    <meta
+      name="twitter:description"
+      content="Co-Founders' precision JSON compiler for Expert Olympiad problem banks across 5 core mathematical hubs with instant LaTeX conversion and one-click file export."
+    />
+
+    <!-- 6. Schema.org JSON-LD Structured Application Metadata -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Arithmo-Edge: Golden Question Bank JSON Generator",
+        "alternateName": "Arithmo Golden Vault Compiler v1.2",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "All (Web Browser)",
+        "description": "Precision authoring utility designed for the Arithmo-Edge competitive mathematics ecosystem to compile 10-problem Expert Olympiad sets with automated LaTeX conversion, per-question unrated tags, and single-value deterministic answers.",
+        "author": {
+          "@type": "Person",
+          "name": "Rayaan Tasnim",
+          "jobTitle": "Founder & Chief System Architect"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Arithmo-Edge",
+          "slogan": "Powered by Olympiad Edge"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+    <!-- ======================================================================= -->
+
+    <title>Arithmo-Edge: Golden Question Bank JSON Generator</title>
+    <link rel="icon" type="image/jpeg" href="favicon.jpg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,837 +117,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <style>
-        :root {
-            --bg-color: #0A0910;
-            --card-bg: #13111C;
-            --primary-neon: #A855F7;
-            --secondary-neon: #10B981;
-            --alert-neon: #F43F5E;
-            --text-main: #F3F4F6;
-            --text-muted: #9CA3AF;
-            --border-color: rgba(168, 85, 247, 0.25);
-            --border-focus: #A855F7;
-            --shadow-cyan: 0 0 15px rgba(168, 85, 247, 0.4);
-            --shadow-lime: 0 0 20px rgba(16, 185, 129, 0.5);
-            --shadow-red: 0 0 25px rgba(244, 63, 94, 0.6);
-            --grid-line-color: rgba(168, 85, 247, 0.03);
-            --header-bg: rgba(19, 17, 28, 0.85);
-            --fieldset-bg: rgba(10, 9, 16, 0.4);
-            --code-bg: #050408;
-            --footer-border: rgba(168, 85, 247, 0.15);
-        }
-
-        body.light-theme {
-            --bg-color: #F8FAFC;
-            --card-bg: #FFFFFF;
-            --primary-neon: #7C3AED;
-            --secondary-neon: #059669;
-            --alert-neon: #E11D48;
-            --text-main: #0F172A;
-            --text-muted: #64748B;
-            --border-color: rgba(124, 58, 237, 0.25);
-            --border-focus: #7C3AED;
-            --shadow-cyan: 0 0 15px rgba(124, 58, 237, 0.25);
-            --shadow-lime: 0 0 20px rgba(5, 150, 105, 0.3);
-            --shadow-red: 0 0 25px rgba(225, 29, 72, 0.3);
-            --grid-line-color: rgba(124, 58, 237, 0.06);
-            --header-bg: rgba(255, 255, 255, 0.9);
-            --fieldset-bg: rgba(241, 245, 249, 0.6);
-            --code-bg: #0F172A;
-            --footer-border: rgba(124, 58, 237, 0.15);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            overflow-x: hidden;
-            opacity: 1;
-            visibility: visible;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        /* Ambient Cyber Grid Background Effect */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: 
-                linear-gradient(var(--bg-color), var(--bg-color)),
-                linear-gradient(90deg, var(--grid-line-color) 1px, transparent 1px),
-                linear-gradient(var(--grid-line-color) 1px, transparent 1px);
-            background-size: 100% 100%, 30px 30px, 30px 30px;
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        /* Header Navigation Styles */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 40px;
-            background: var(--header-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            transition: background 0.3s ease, border-color 0.3s ease;
-        }
-
-        .logo {
-            font-family: 'Fira Code', monospace;
-            font-size: clamp(1rem, 4vw, 1.5rem);
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            color: var(--text-main);
-            text-transform: uppercase;
-            text-decoration: none;
-            white-space: nowrap;
-            flex-shrink: 0;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .logo:hover {
-            color: var(--primary-neon);
-            text-shadow: 0 0 10px var(--primary-neon);
-        }
-
-        .header-controls-wrapper {
-            display: flex;
-            align-items: center;
-        }
-
-        .header-status {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .quota-badge {
-            font-family: 'Fira Code', monospace;
-            font-size: 0.85rem;
-            padding: 6px 14px;
-            border-radius: 20px;
-            border: 1px solid var(--primary-neon);
-            background: rgba(168, 85, 247, 0.05);
-            color: var(--primary-neon);
-            box-shadow: inset 0 0 8px rgba(168, 85, 247, 0.2);
-            transition: all 0.3s ease-in-out;
-            white-space: nowrap;
-        }
-
-        .mode-toggle-btn {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border: 1px solid var(--border-color);
-            background: transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            color: var(--primary-neon);
-            font-size: 1rem;
-            user-select: none;
-            flex-shrink: 0;
-        }
-
-        .mode-toggle-btn:hover {
-            border-color: var(--primary-neon);
-            box-shadow: var(--shadow-cyan);
-        }
-
-        /* Mobile Hamburger Trigger */
-        .hamburger-btn {
-            display: none;
-            background: transparent;
-            border: 1px solid var(--border-color);
-            color: var(--primary-neon);
-            width: 38px;
-            height: 38px;
-            border-radius: 6px;
-            font-size: 1.25rem;
-            cursor: pointer;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .hamburger-btn:hover,
-        .hamburger-btn.active {
-            border-color: var(--primary-neon);
-            box-shadow: var(--shadow-cyan);
-            background: rgba(168, 85, 247, 0.1);
-        }
-
-        /* Mobile Collapsible Menu Drawer - Enhanced Contrast */
-        .mobile-nav-drawer {
-            display: none;
-            flex-direction: column;
-            gap: 16px;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background: rgba(10, 9, 16, 0.95);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-bottom: 2px solid var(--primary-neon);
-            padding: 24px;
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(168, 85, 247, 0.25);
-            opacity: 0;
-            transform: translateY(-10px);
-            pointer-events: none;
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            z-index: 99;
-        }
-
-        body.light-theme .mobile-nav-drawer {
-            background: rgba(255, 255, 255, 0.98);
-            border-bottom: 2px solid var(--primary-neon);
-            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.15), 0 0 20px rgba(124, 58, 237, 0.15);
-        }
-
-        .mobile-nav-drawer.open {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
-        }
-
-        .mobile-drawer-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            padding: 10px 14px;
-            background: var(--fieldset-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            transition: border-color 0.3s ease;
-        }
-
-        .mobile-drawer-row:hover {
-            border-color: var(--primary-neon);
-        }
-
-        .mobile-drawer-label {
-            font-family: 'Fira Code', monospace;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-main);
-            letter-spacing: 0.5px;
-        }
-
-        /* Container & Card Layouts */
-        .main-container {
-            max-width: 1400px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: row;
-            gap: 40px;
-            justify-content: center;
-            align-items: flex-start;
-            flex: 1;
-        }
-
-        .limit-banner {
-            display: none;
-            width: 100%;
-            max-width: 1400px;
-            margin: 20px auto -20px auto;
-            padding: 16px 24px;
-            background: rgba(244, 63, 94, 0.1);
-            border: 2px solid var(--alert-neon);
-            border-radius: 8px;
-            color: #FF6B8B;
-            font-family: 'Fira Code', monospace;
-            font-weight: 700;
-            text-align: center;
-            box-shadow: var(--shadow-red);
-            animation: pulse-glow 2s infinite ease-in-out;
-            z-index: 90;
-        }
-
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 15px rgba(244, 63, 94, 0.4); }
-            50% { box-shadow: 0 0 30px rgba(244, 63, 94, 0.8); }
-        }
-
-        .form-section {
-            flex: 1;
-            width: 100%;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s ease-in-out;
-        }
-
-        .form-section.blurred {
-            filter: blur(6px);
-            pointer-events: none;
-            user-select: none;
-            opacity: 0.5;
-        }
-
-        fieldset {
-            border: 1px solid rgba(168, 85, 247, 0.2);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 25px;
-            background: var(--fieldset-bg);
-            transition: all 0.3s ease-in-out;
-        }
-
-        fieldset:hover {
-            border-color: rgba(168, 85, 247, 0.4);
-        }
-
-        legend {
-            font-family: 'Fira Code', monospace;
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: var(--primary-neon);
-            padding: 0 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .input-group {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            margin-bottom: 16px;
-        }
-
-        .input-group:last-child {
-            margin-bottom: 0;
-        }
-
-        label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-main);
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .hint {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            font-weight: 400;
-        }
-
-        input[type="text"],
-        input[type="url"],
-        select,
-        textarea {
-            width: 100%;
-            background: var(--bg-color);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 12px 16px;
-            color: var(--text-main);
-            font-family: inherit;
-            font-size: 0.9rem;
-            outline: none;
-            transition: all 0.3s ease-in-out;
-        }
-
-        select {
-            color-scheme: dark;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            cursor: pointer;
-        }
-
-        body.light-theme select {
-            color-scheme: light;
-        }
-
-        select option {
-            background-color: var(--card-bg);
-            color: var(--text-main);
-            padding: 10px 14px;
-        }
-
-        select option:hover,
-        select option:focus,
-        select option:checked {
-            background-color: var(--primary-neon);
-            color: #FFFFFF;
-        }
-
-        textarea {
-            resize: vertical;
-            min-height: 80px;
-        }
-
-        input[type="text"]:focus,
-        input[type="url"]:focus,
-        select:focus,
-        textarea:focus {
-            border-color: var(--primary-neon);
-            box-shadow: var(--shadow-cyan);
-            background-color: var(--bg-color);
-        }
-
-        input.invalid, select.invalid, textarea.invalid {
-            border-color: var(--alert-neon) !important;
-            box-shadow: 0 0 10px rgba(244, 63, 94, 0.3) !important;
-        }
-
-        input.valid, select.valid, textarea.valid {
-            border-color: var(--secondary-neon) !important;
-        }
-
-        .error-msg {
-            font-size: 0.75rem;
-            color: var(--alert-neon);
-            font-family: 'Fira Code', monospace;
-            display: none;
-            margin-top: 2px;
-        }
-
-        /* Dynamic CSS Link Input Row & Neon Remove Button System */
-        .css-input-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-
-        .css-input-row {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            position: relative;
-            animation: fadeInRow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        @keyframes fadeInRow {
-            from {
-                opacity: 0;
-                transform: translateY(-8px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .css-input-row input[type="text"] {
-            flex: 1;
-        }
-
-        .btn-remove-css {
-            width: 42px;
-            height: 42px;
-            flex-shrink: 0;
-            background: rgba(244, 63, 94, 0.1);
-            border: 1px solid var(--alert-neon);
-            border-radius: 6px;
-            color: var(--alert-neon);
-            font-family: 'Fira Code', monospace;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease-in-out;
-            box-shadow: inset 0 0 8px rgba(244, 63, 94, 0.2);
-        }
-
-        .btn-remove-css:hover {
-            background: var(--alert-neon);
-            color: #FFFFFF;
-            box-shadow: var(--shadow-red);
-            transform: scale(1.05);
-        }
-
-        .btn-add-css {
-            font-family: 'Fira Code', monospace;
-            font-size: 0.82rem;
-            font-weight: 600;
-            padding: 10px 16px;
-            border-radius: 6px;
-            border: 1px dashed var(--primary-neon);
-            background: rgba(168, 85, 247, 0.05);
-            color: var(--primary-neon);
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease-in-out;
-            align-self: flex-start;
-        }
-
-        .btn-add-css:hover {
-            background: rgba(168, 85, 247, 0.15);
-            border-style: solid;
-            box-shadow: var(--shadow-cyan);
-            transform: translateY(-1px);
-        }
-
-        /* Dynamic Grid Buttons */
-        .action-button-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            width: 100%;
-            margin-top: 25px;
-        }
-
-        .btn {
-            font-family: 'Fira Code', monospace;
-            font-size: 0.9rem;
-            font-weight: 700;
-            padding: 16px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            text-align: center;
-        }
-
-        /* Cyberpunk Ghost Look for Disabled State with #0D1117 contrast */
-        .btn-primary:disabled {
-            background: #0D1117;
-            border: 1px dashed var(--alert-neon);
-            color: #FF6B8B;
-            cursor: not-allowed;
-            box-shadow: inset 0 0 10px rgba(244, 63, 94, 0.2);
-            opacity: 0.9;
-        }
-
-        body.light-theme .btn-primary:disabled {
-            background: #0D1117;
-            color: #FF6B8B;
-            border-color: var(--alert-neon);
-        }
-
-        .btn-primary.valid-ready:not(:disabled) {
-            background: var(--secondary-neon);
-            border: 1px solid var(--secondary-neon);
-            color: #FFFFFF;
-            box-shadow: var(--shadow-lime);
-        }
-
-        .btn-primary.valid-ready:not(:disabled):hover {
-            background: #0ea572;
-            transform: translateY(-2px);
-            box-shadow: 0 0 25px rgba(16, 185, 129, 0.8);
-        }
-
-        .btn-refresh {
-            border: 1px solid var(--primary-neon);
-            background: transparent;
-            color: var(--primary-neon);
-            box-shadow: inset 0 0 10px rgba(168, 85, 247, 0.1);
-        }
-
-        .btn-refresh:hover {
-            background: var(--primary-neon);
-            color: #FFFFFF;
-            box-shadow: var(--shadow-cyan);
-            transform: translateY(-2px);
-        }
-
-        .output-section {
-            flex: 1;
-            width: 100%;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-            display: none;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-        }
-
-        .output-section.visible {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .output-intro {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-
-        .code-block-wrapper {
-            background: var(--code-bg);
-            border: 2px solid var(--secondary-neon);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: var(--shadow-lime);
-            overflow-x: auto;
-            margin-bottom: 25px;
-            position: relative;
-        }
-
-        pre {
-            font-family: 'Fira Code', monospace;
-            font-size: 0.85rem;
-            color: #F3F4F6;
-            line-height: 1.6;
-            white-space: pre;
-        }
-
-        .output-utility-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 15px;
-        }
-
-        .btn-copy {
-            background: rgba(168, 85, 247, 0.1);
-            border: 1px solid var(--primary-neon);
-            color: var(--primary-neon);
-        }
-
-        .btn-copy:hover {
-            background: var(--primary-neon);
-            color: #FFFFFF;
-            box-shadow: var(--shadow-cyan);
-        }
-
-        .btn-again {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--text-muted);
-            color: var(--text-main);
-        }
-
-        body.light-theme .btn-again {
-            background: rgba(0, 0, 0, 0.05);
-        }
-
-        .btn-again:hover {
-            border-color: var(--text-main);
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-2px);
-        }
-
-        body.light-theme .btn-again:hover {
-            background: rgba(0, 0, 0, 0.1);
-        }
-
-        /* Dual Progress Bar Loader Overlay Styles (#0D1117) */
-        .loader-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(13, 17, 23, 0.94);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .loader-overlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .loader-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 40px;
-            width: 100%;
-            max-width: 440px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(168, 85, 247, 0.25);
-            transition: background 0.3s ease, border-color 0.3s ease;
-        }
-
-        .circle-progress-wrapper {
-            position: relative;
-            width: 110px;
-            height: 110px;
-            margin-bottom: 25px;
-        }
-
-        .circle-svg {
-            width: 100%;
-            height: 100%;
-            transform: rotate(-90deg);
-        }
-
-        .circle-bg {
-            fill: none;
-            stroke: rgba(168, 85, 247, 0.15);
-            stroke-width: 8;
-        }
-
-        .circle-fill {
-            fill: none;
-            stroke: var(--primary-neon);
-            stroke-width: 8;
-            stroke-linecap: round;
-            stroke-dasharray: 264;
-            stroke-dashoffset: 264;
-            transition: stroke-dashoffset 1s linear;
-        }
-
-        .circle-timer-text {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Fira Code', monospace;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--text-main);
-        }
-
-        .linear-progress-wrapper {
-            width: 100%;
-            height: 6px;
-            background: rgba(168, 85, 247, 0.15);
-            border-radius: 3px;
-            overflow: hidden;
-            margin-bottom: 25px;
-        }
-
-        .linear-progress-bar {
-            width: 0%;
-            height: 100%;
-            background: var(--secondary-neon);
-            box-shadow: var(--shadow-lime);
-            transition: width 1s linear;
-        }
-
-        .loader-status-text {
-            font-family: 'Fira Code', monospace;
-            font-size: 0.85rem;
-            color: var(--primary-neon);
-            text-align: center;
-            min-height: 24px;
-            margin-bottom: 30px;
-            text-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
-            letter-spacing: 0.5px;
-        }
-
-        .btn-abort {
-            font-family: 'Fira Code', monospace;
-            font-size: 0.85rem;
-            font-weight: 700;
-            padding: 12px 24px;
-            border-radius: 8px;
-            border: 1px solid var(--alert-neon);
-            background: rgba(244, 63, 94, 0.1);
-            color: var(--alert-neon);
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            transition: all 0.3s ease-in-out;
-            box-shadow: inset 0 0 10px rgba(244, 63, 94, 0.2);
-            width: 100%;
-        }
-
-        .btn-abort:hover {
-            background: var(--alert-neon);
-            color: #FFFFFF;
-            box-shadow: var(--shadow-red);
-            transform: translateY(-2px);
-        }
-
-        footer {
-            padding: 24px 20px;
-            border-top: 1px solid var(--footer-border);
-            text-align: center;
-            font-family: 'Fira Code', monospace;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            line-height: 1.8;
-            margin-top: auto;
-        }
-
-        footer p {
-            letter-spacing: 0.5px;
-        }
-
-        /* Responsive Breakpoints */
-        @media (max-width: 992px) {
-            .main-container {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header {
-                padding: 14px 20px;
-            }
-
-            .header-status {
-                display: none;
-            }
-
-            .hamburger-btn {
-                display: flex;
-            }
-
-            .mobile-nav-drawer {
-                display: flex;
-            }
-
-            .action-button-grid,
-            .output-utility-grid {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-
-            .form-section, .output-section {
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
     <header id="mainHeader">
@@ -880,7 +152,7 @@
       <div class="mobile-nav-drawer" id="mobileDrawer">
         <div class="mobile-drawer-row">
           <span class="mobile-drawer-label">VAULT STATUS</span>
-          <div class="quota-badge quota-display-target">VAULT STATUS: UNLIMITED READY ⚡</div>
+          <div class="quota-badge quota-display-target">UNLIMITED READY ⚡</div>
         </div>
         <div class="mobile-drawer-row">
           <span class="mobile-drawer-label">INTERFACE THEME</span>
@@ -904,15 +176,35 @@
             <legend>Part 1: Golden Question Bank Metadata</legend>
 
             <div class="input-group">
-              <label for="hub"
-                >Main Hub <span class="hint">(Select Domain)</span></label
-              >
+              <label for="lockedModeDisplay">
+                Operational Mode <span class="hint">(Locked System Tier)</span>
+              </label>
+              <input
+                type="text"
+                id="lockedModeDisplay"
+                class="locked-mode-field"
+                value="Mode: Expert"
+                readonly
+                tabindex="-1"
+                aria-readonly="true"
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="hub">
+                Main Hub <span class="hint">(Select Olympiad Arena)</span>
+              </label>
               <select id="hub" required>
                 <option value="">-- Select Main Hub --</option>
                 <option value="Number Theory">Number Theory</option>
                 <option value="Algebra">Algebra</option>
-                <option value="Combinatorics and Permutation">Combinatorics and Permutation</option>
                 <option value="Geometry">Geometry</option>
+                <option value="Combinatorics and Permutation">
+                  Combinatorics and Permutation
+                </option>
+                <option value="Mixed Mathematical Olympiad">
+                  Mixed Mathematical Olympiad
+                </option>
               </select>
               <span class="error-msg" id="err-hub"
                 >Please select a Main Hub.</span
@@ -920,32 +212,18 @@
             </div>
 
             <div class="input-group">
-              <label for="tag"
-                >Hub Tag
-                <span class="hint">(Select Topic Tag)</span></label
-              >
-              <select id="tag" required>
-                <option value="">-- Select Hub Tag --</option>
-                <option value="Prime Factors">Prime Factors</option>
-                <option value="GCD-LCM">GCD-LCM</option>
-                <option value="Number of Divisors">Number of Divisors</option>
-                <option value="Square Root">Square Root</option>
-                <option value="Sum of Divisors">Sum of Divisors</option>
-              </select>
-              <span class="error-msg" id="err-tag"
-                >Please select a Hub Tag.</span
-              >
-            </div>
-
-            <div class="input-group">
-              <label for="segment"
-                >Expert Segment
-                <span class="hint">(Select Difficulty Tier)</span></label
-              >
+              <label for="segment">
+                Expert Segment
+                <span class="hint">(Select Difficulty Tier)</span>
+              </label>
               <select id="segment" required>
                 <option value="">-- Select Expert Segment --</option>
-                <option value="Segment_1_Apprentice">Segment 1 : Apprentice</option>
-                <option value="Segment_2_Intermediate">Segment 2 : Intermediate</option>
+                <option value="Segment_1_Apprentice">
+                  Segment 1 : Apprentice
+                </option>
+                <option value="Segment_2_Intermediate">
+                  Segment 2 : Intermediate
+                </option>
                 <option value="Segment_3_Vanguard">Segment 3 : Vanguard</option>
                 <option value="Segment_4_Apex">Segment 4 : Apex</option>
               </select>
@@ -955,33 +233,35 @@
             </div>
 
             <div class="input-group">
-              <label for="set_id"
-                >Set ID
-                <span class="hint">(Numeric or Alphanumeric e.g. 001, S1-001)</span></label
-              >
+              <label for="set_id">
+                Set ID
+                <span class="hint"
+                  >(Numeric or Alphanumeric e.g. 001, S1-001)</span
+                >
+              </label>
               <input
                 type="text"
                 id="set_id"
                 required
                 placeholder="e.g., 001 or S1-001"
               />
-              <span class="error-msg" id="err-set_id"
-                >Set ID is required.</span
-              >
+              <span class="error-msg" id="err-set_id">Set ID is required.</span>
             </div>
           </fieldset>
 
           <!-- Part 2: Dynamic 10-Question Builder -->
           <br /><br />
           <fieldset>
-            <legend>Part 2: Golden Problem Matrix (10 Questions Required)</legend>
+            <legend>
+              Part 2: Golden Problem Matrix (10 Questions Required)
+            </legend>
             <div class="input-group">
-              <label
-                >Problem Sequence
+              <label>
+                Problem Sequence
                 <span class="hint" id="questionCounterHint"
                   >(1/10 Questions Added)</span
-                ></label
-              >
+                >
+              </label>
               <div class="css-input-wrapper" id="questionInputWrapper">
                 <!-- Question #1 initialized on page load -->
               </div>
@@ -993,6 +273,13 @@
 
           <!-- Action Controls Grid -->
           <br /><br />
+          <div
+            id="validationStatusBox"
+            class="validation-status-box visible"
+            role="status"
+            aria-live="polite"
+          ></div>
+
           <div class="action-button-grid">
             <button
               type="submit"
@@ -1000,7 +287,7 @@
               class="btn btn-primary"
               disabled
             >
-              ADD MORE QUESTIONS (1/10 COMPLETE) ⚡
+              GENERATE GOLDEN JSON ⚡
             </button>
             <button type="button" id="btnRefreshAll" class="btn btn-refresh">
               REFRESH ALL 🔄
@@ -1012,7 +299,9 @@
       <!-- SECTION 2: DYNAMIC OUTPUT BOX -->
       <section class="output-section" id="outputCard">
         <p class="output-intro">
-          Your Arithmo-Edge Golden Question Bank JSON payload has been compiled successfully with automated LaTeX conversion. Copy or download the file directly.
+          Your Arithmo-Edge Golden Question Bank JSON payload has been compiled
+          successfully with automated LaTeX conversion and per-question tags.
+          Copy or download the file directly.
         </p>
 
         <div class="code-block-wrapper">
@@ -1023,7 +312,11 @@
           <button type="button" id="btnCopy" class="btn btn-copy">
             COPY TO CLIPBOARD 📋
           </button>
-          <button type="button" id="btnDownloadJson" class="btn btn-primary valid-ready">
+          <button
+            type="button"
+            id="btnDownloadJson"
+            class="btn btn-primary valid-ready"
+          >
             DOWNLOAD .JSON ⬇️
           </button>
           <button type="button" id="btnGenerateAgain" class="btn btn-again">
@@ -1074,637 +367,11 @@
         © All Rights Reserved
       </p>
       <p>
-        Dedicated for all developers worldwide <br />
-        Powered by IDAI Universe
+        © Arithmo-Edge <br />
+        Powered by Olympiad Edge
       </p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const MAX_QUESTIONS = 10;
-
-            // Core Elements
-            const form = document.getElementById('metaForm');
-            const btnGenerate = document.getElementById('btnGenerate');
-            const btnRefreshAll = document.getElementById('btnRefreshAll');
-            const btnCopy = document.getElementById('btnCopy');
-            const btnDownloadJson = document.getElementById('btnDownloadJson');
-            const btnGenerateAgain = document.getElementById('btnGenerateAgain');
-            const formSection = document.getElementById('formSection');
-            const outputCard = document.getElementById('outputCard');
-            const codeOutput = document.getElementById('codeOutput');
-
-            // Part-2 Dynamic Question Builder Elements
-            const questionInputWrapper = document.getElementById('questionInputWrapper');
-            const btnAddQuestion = document.getElementById('btnAddQuestion');
-            const questionCounterHint = document.getElementById('questionCounterHint');
-
-            // Header Elements
-            const hamburgerBtn = document.getElementById('hamburgerBtn');
-            const mobileDrawer = document.getElementById('mobileDrawer');
-            const mainHeader = document.getElementById('mainHeader');
-            const themeToggleTargets = document.querySelectorAll('.theme-toggle-target');
-
-            // Loader Overlay Elements
-            const loaderOverlay = document.getElementById('loaderOverlay');
-            const circleFill = document.getElementById('circleFill');
-            const circleTimerText = document.getElementById('circleTimerText');
-            const linearProgressBar = document.getElementById('linearProgressBar');
-            const loaderStatusText = document.getElementById('loaderStatusText');
-            const btnAbort = document.getElementById('btnAbort');
-
-            const metaInputs = {
-                hub: document.getElementById('hub'),
-                tag: document.getElementById('tag'),
-                segment: document.getElementById('segment'),
-                set_id: document.getElementById('set_id')
-            };
-
-            let isGenerating = false;
-            let compilationInterval = null;
-            let currentCompilationSecond = 0;
-            let lastGeneratedFilename = 'Arithmo_Edge_Golden_Set.json';
-            const CIRCLE_CIRCUMFERENCE = 264; // 2 * pi * 42
-
-            // 25-Asset Random Pre-Compensation Algorithm Matrix (5 Pools of 5 Technical Statements)
-            const compilationPools = [
-                // Pool 1 (Second 1)
-                [
-                    "Booting Arithmo-Edge core...",
-                    "Initiating JSON compilation...",
-                    "Opening problem stream...",
-                    "Loading vault headers...",
-                    "Connecting schema handshakes..."
-                ],
-                // Pool 2 (Second 2)
-                [
-                    "Parsing Golden Bank schema...",
-                    "Extracting hub & tag tokens...",
-                    "Scanning segment configurations...",
-                    "Reading problem sequences...",
-                    "Mapping core math variables..."
-                ],
-                // Pool 3 (Second 3)
-                [
-                    "Sanitizing statement whitespace...",
-                    "Converting plain math to LaTeX...",
-                    "Formatting exponent & root nodes...",
-                    "Validating single-value answers...",
-                    "Checking duplicate statements..."
-                ],
-                // Pool 4 (Second 4)
-                [
-                    "Indexing q_index 1 through 10...",
-                    "Verifying set_id signature...",
-                    "Structuring problem_count...",
-                    "Compiling LaTeX expressions...",
-                    "Auditing JSON syntax tree..."
-                ],
-                // Pool 5 (Second 5)
-                [
-                    "Building Golden JSON payload...",
-                    "Injecting ecosystem metadata...",
-                    "Finalizing UTF-8 encoding...",
-                    "Packaging production .json...",
-                    "Deploying vault metrics..."
-                ]
-            ];
-
-            function getRandomPoolItem(poolIndex) {
-                const pool = compilationPools[poolIndex];
-                const randomIndex = Math.floor(Math.random() * pool.length);
-                return pool[randomIndex];
-            }
-
-            function updateLoaderProgress(sec) {
-                const percent = (sec / 5) * 100;
-                linearProgressBar.style.width = `${percent}%`;
-
-                const strokeOffset = CIRCLE_CIRCUMFERENCE - (percent / 100) * CIRCLE_CIRCUMFERENCE;
-                circleFill.style.strokeDashoffset = strokeOffset;
-
-                const remaining = 5 - sec;
-                circleTimerText.textContent = `${remaining}s`;
-
-                if (sec >= 1 && sec <= 5) {
-                    loaderStatusText.textContent = getRandomPoolItem(sec - 1);
-                }
-            }
-
-            // 0. MOBILE HAMBURGER DRAWER LOGIC
-            const toggleDrawer = (forceState) => {
-                const isOpen = forceState !== undefined ? forceState : !mobileDrawer.classList.contains('open');
-                mobileDrawer.classList.toggle('open', isOpen);
-                hamburgerBtn.classList.toggle('active', isOpen);
-                hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-                hamburgerBtn.textContent = isOpen ? '✕' : '☰';
-            };
-
-            hamburgerBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                toggleDrawer();
-            });
-
-            document.addEventListener('click', (e) => {
-                if (!mainHeader.contains(e.target)) {
-                    toggleDrawer(false);
-                }
-            });
-
-            // 1. LIGHT / DARK THEME TOGGLE LOGIC
-            const savedTheme = localStorage.getItem('df_theme') || 'dark';
-
-            const applyTheme = (theme) => {
-                const isLight = theme === 'light';
-                document.body.classList.toggle('light-theme', isLight);
-                themeToggleTargets.forEach(btn => {
-                    btn.setAttribute('title', isLight ? 'Light Matrix Active' : 'Dark Cyberpunk Active');
-                    btn.textContent = isLight ? '☀️' : '⚡';
-                });
-            };
-
-            applyTheme(savedTheme);
-
-            themeToggleTargets.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const currentIsLight = document.body.classList.contains('light-theme');
-                    const nextTheme = currentIsLight ? 'dark' : 'light';
-                    localStorage.setItem('df_theme', nextTheme);
-                    applyTheme(nextTheme);
-                });
-            });
-
-            // 2. AUTO-LATEX CONVERSION HELPER
-            function convertPlainToLatex(plainStr) {
-                if (!plainStr) return '';
-                let tex = plainStr.trim();
-
-                // Convert fractions like (a)/(b) -> \frac{a}{b}
-                tex = tex.replace(/\(([^()]+)\)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}');
-
-                // Convert square roots like sqrt(x) -> \sqrt{x}
-                tex = tex.replace(/sqrt\(([^()]+)\)/gi, '\\sqrt{$1}');
-
-                // Convert multi-character exponents like 2^12 or x^(n+1) -> 2^{12} or x^{n+1}
-                tex = tex.replace(/\^\(([^()]+)\)/g, '^{$1}');
-                tex = tex.replace(/\^([a-zA-Z0-9\-+]{2,})/g, '^{$1}');
-
-                // Convert relational operators <=, >=, !=
-                tex = tex.replace(/<=/g, '\\le ');
-                tex = tex.replace(/>=/g, '\\ge ');
-                tex = tex.replace(/!=/g, '\\ne ');
-
-                // Clean double spaces
-                tex = tex.replace(/\s+/g, ' ').trim();
-
-                // Wrap in $ ... $ if not already wrapped
-                if (!tex.startsWith('$') && !tex.endsWith('$')) {
-                    tex = `$${tex}$`;
-                }
-                return tex;
-            }
-
-            function cleanStatementText(rawText) {
-                if (!rawText) return '';
-                return rawText.replace(/[\r\n]+/g, ' ').replace(/\s+/g, ' ').trim();
-            }
-
-            // 3. DYNAMIC QUESTION ROW CREATION & AUTO-INDEXING ENGINE
-            function createQuestionRow(allowRemove = true) {
-                const row = document.createElement('div');
-                row.className = 'css-input-row question-row';
-                row.style.flexDirection = 'column';
-                row.style.alignItems = 'stretch';
-                row.style.padding = '16px';
-                row.style.border = '1px solid var(--border-color)';
-                row.style.borderRadius = '8px';
-                row.style.background = 'rgba(168, 85, 247, 0.03)';
-
-                const headerBar = document.createElement('div');
-                headerBar.style.display = 'flex';
-                headerBar.style.justifyContent = 'space-between';
-                headerBar.style.alignItems = 'center';
-                headerBar.style.marginBottom = '8px';
-
-                const indexLabel = document.createElement('label');
-                indexLabel.className = 'question-index-label';
-                indexLabel.style.fontFamily = "'Fira Code', monospace";
-                indexLabel.style.color = 'var(--primary-neon)';
-                indexLabel.textContent = 'Question #1';
-
-                headerBar.appendChild(indexLabel);
-
-                if (allowRemove) {
-                    const removeBtn = document.createElement('button');
-                    removeBtn.type = 'button';
-                    removeBtn.className = 'btn-remove-css';
-                    removeBtn.title = 'Remove Question';
-                    removeBtn.textContent = '✕';
-                    removeBtn.style.width = '32px';
-                    removeBtn.style.height = '32px';
-                    removeBtn.style.fontSize = '0.9rem';
-
-                    removeBtn.addEventListener('click', () => {
-                        row.remove();
-                        reindexQuestions();
-                        checkFormValidation();
-                    });
-
-                    headerBar.appendChild(removeBtn);
-                }
-
-                const stmtInput = document.createElement('textarea');
-                stmtInput.className = 'q-statement-input';
-                stmtInput.placeholder = 'Enter Question Statement (e.g., Find the number of divisors of 2^12 * 3^5)';
-                stmtInput.style.minHeight = '65px';
-                stmtInput.style.marginBottom = '8px';
-
-                const ansInput = document.createElement('input');
-                ansInput.type = 'text';
-                ansInput.className = 'q-answer-input';
-                ansInput.placeholder = 'Single-Value Answer (e.g., 78)';
-
-                const errSpan = document.createElement('span');
-                errSpan.className = 'error-msg q-error';
-                errSpan.textContent = 'Both statement and answer are required (no duplicate statements).';
-
-                [stmtInput, ansInput].forEach(el => {
-                    el.addEventListener('input', checkFormValidation);
-                    el.addEventListener('blur', checkFormValidation);
-                });
-
-                row.appendChild(headerBar);
-                row.appendChild(stmtInput);
-                row.appendChild(ansInput);
-                row.appendChild(errSpan);
-
-                return row;
-            }
-
-            function reindexQuestions() {
-                const rows = questionInputWrapper.querySelectorAll('.question-row');
-                const count = rows.length;
-
-                rows.forEach((row, idx) => {
-                    const label = row.querySelector('.question-index-label');
-                    if (label) {
-                        label.textContent = `Question #${idx + 1}`;
-                    }
-                    const removeBtn = row.querySelector('.btn-remove-css');
-                    if (removeBtn) {
-                        removeBtn.style.display = count > 1 ? 'flex' : 'none';
-                    }
-                });
-
-                questionCounterHint.textContent = `(${count}/${MAX_QUESTIONS} Questions Added)`;
-
-                if (count >= MAX_QUESTIONS) {
-                    btnAddQuestion.disabled = true;
-                    btnAddQuestion.style.display = 'none';
-                } else {
-                    btnAddQuestion.disabled = false;
-                    btnAddQuestion.style.display = 'inline-flex';
-                }
-            }
-
-            function initializeQuestions() {
-                questionInputWrapper.innerHTML = '';
-                const firstRow = createQuestionRow(true);
-                questionInputWrapper.appendChild(firstRow);
-                reindexQuestions();
-            }
-
-            btnAddQuestion.addEventListener('click', () => {
-                const currentCount = questionInputWrapper.querySelectorAll('.question-row').length;
-                if (currentCount >= MAX_QUESTIONS) return;
-
-                const newRow = createQuestionRow(true);
-                questionInputWrapper.appendChild(newRow);
-                reindexQuestions();
-                newRow.querySelector('.q-statement-input').focus();
-                checkFormValidation();
-            });
-
-            // 4. GLOBAL FORM VALIDATION & DYNAMIC BUTTON HELPER TEXT STATE ENGINE
-            function checkFormValidation() {
-                const rows = Array.from(questionInputWrapper.querySelectorAll('.question-row'));
-                const totalRows = rows.length;
-
-                const statementFreq = {};
-                const rowDetails = rows.map(row => {
-                    const stmtEl = row.querySelector('.q-statement-input');
-                    const ansEl = row.querySelector('.q-answer-input');
-                    const errEl = row.querySelector('.q-error');
-                    const stmtVal = cleanStatementText(stmtEl.value);
-                    const ansVal = ansEl.value.trim();
-
-                    if (stmtVal !== '') {
-                        const norm = stmtVal.toLowerCase();
-                        statementFreq[norm] = (statementFreq[norm] || 0) + 1;
-                    }
-
-                    return { stmtEl, ansEl, errEl, stmtVal, ansVal };
-                });
-
-                let completedQuestions = 0;
-                let duplicateFound = false;
-
-                rowDetails.forEach(item => {
-                    const { stmtEl, ansEl, errEl, stmtVal, ansVal } = item;
-                    const isDup = stmtVal !== '' && statementFreq[stmtVal.toLowerCase()] > 1;
-                    if (isDup) duplicateFound = true;
-
-                    if (stmtVal === '') {
-                        stmtEl.classList.remove('valid', 'invalid');
-                    } else if (isDup) {
-                        stmtEl.classList.remove('valid');
-                        stmtEl.classList.add('invalid');
-                    } else {
-                        stmtEl.classList.remove('invalid');
-                        stmtEl.classList.add('valid');
-                    }
-
-                    if (ansVal === '') {
-                        ansEl.classList.remove('valid', 'invalid');
-                    } else {
-                        ansEl.classList.remove('invalid');
-                        ansEl.classList.add('valid');
-                    }
-
-                    if (isDup) {
-                        errEl.textContent = 'Duplicate question statement detected. Each question must be unique.';
-                        errEl.style.display = 'block';
-                    } else if ((stmtVal !== '' && ansVal === '') || (stmtVal === '' && ansVal !== '')) {
-                        errEl.textContent = 'Both Question Statement and Single-Value Answer are required.';
-                        errEl.style.display = 'block';
-                    } else {
-                        errEl.style.display = 'none';
-                    }
-
-                    if (stmtVal !== '' && ansVal !== '' && !isDup) {
-                        completedQuestions++;
-                    }
-                });
-
-                const hubValid = metaInputs.hub.value.trim() !== '';
-                const tagValid = metaInputs.tag.value.trim() !== '';
-                const segmentValid = metaInputs.segment.value.trim() !== '';
-                const setIdValid = metaInputs.set_id.value.trim() !== '';
-
-                if (totalRows < MAX_QUESTIONS) {
-                    btnGenerate.disabled = true;
-                    btnGenerate.classList.remove('valid-ready');
-                    btnGenerate.textContent = `ADD MORE QUESTIONS (${totalRows}/10 COMPLETE) ⚡`;
-                    return false;
-                }
-
-                if (duplicateFound) {
-                    btnGenerate.disabled = true;
-                    btnGenerate.classList.remove('valid-ready');
-                    btnGenerate.textContent = `RESOLVE DUPLICATE QUESTIONS ⚡`;
-                    return false;
-                }
-
-                if (completedQuestions < MAX_QUESTIONS) {
-                    btnGenerate.disabled = true;
-                    btnGenerate.classList.remove('valid-ready');
-                    btnGenerate.textContent = `COMPLETE ALL 10 QUESTIONS (${completedQuestions}/10) ⚡`;
-                    return false;
-                }
-
-                if (!hubValid || !tagValid || !segmentValid || !setIdValid) {
-                    btnGenerate.disabled = true;
-                    btnGenerate.classList.remove('valid-ready');
-                    btnGenerate.textContent = `FILL PART 1 METADATA FIELDS ⚡`;
-                    return false;
-                }
-
-                btnGenerate.disabled = false;
-                btnGenerate.classList.add('valid-ready');
-                btnGenerate.textContent = `GENERATE GOLDEN JSON ⚡`;
-                return true;
-            }
-
-            Object.keys(metaInputs).forEach(key => {
-                const el = metaInputs[key];
-                const errSpan = document.getElementById(`err-${key}`);
-
-                const handleMetaChange = () => {
-                    const valid = el.value.trim() !== '';
-                    if (valid) {
-                        el.classList.remove('invalid');
-                        el.classList.add('valid');
-                        if (errSpan) errSpan.style.display = 'none';
-                    } else {
-                        el.classList.remove('valid');
-                        el.classList.add('invalid');
-                        if (errSpan) errSpan.style.display = 'block';
-                    }
-                    checkFormValidation();
-                };
-
-                el.addEventListener('input', handleMetaChange);
-                el.addEventListener('change', handleMetaChange);
-                el.addEventListener('blur', handleMetaChange);
-            });
-
-            // 5. GENERATE GOLDEN JSON SUBMISSION & CONFIRMATION EVENT INTERCEPTOR
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-
-                if (isGenerating || !checkFormValidation()) return;
-
-                const confirmed = confirm("Initiate Golden Question Bank JSON Compilation? Sure?");
-                if (!confirmed) {
-                    return;
-                }
-
-                isGenerating = true;
-                btnGenerate.disabled = true;
-                formSection.classList.add('blurred');
-
-                currentCompilationSecond = 0;
-                updateLoaderProgress(0);
-                circleTimerText.textContent = '5s';
-                loaderStatusText.textContent = compilationPools[0][Math.floor(Math.random() * compilationPools[0].length)];
-                loaderOverlay.classList.add('active');
-
-                compilationInterval = setInterval(() => {
-                    currentCompilationSecond++;
-                    updateLoaderProgress(currentCompilationSecond);
-
-                    if (currentCompilationSecond >= 5) {
-                        clearInterval(compilationInterval);
-                        setTimeout(() => {
-                            executeSuccessfulCompilation();
-                        }, 400);
-                    }
-                }, 1000);
-            });
-
-            // 6. ABORT PROTOCOL
-            btnAbort.addEventListener('click', () => {
-                if (!isGenerating) return;
-
-                if (compilationInterval) {
-                    clearInterval(compilationInterval);
-                    compilationInterval = null;
-                }
-
-                loaderOverlay.classList.remove('active');
-                formSection.classList.remove('blurred');
-                isGenerating = false;
-                checkFormValidation();
-            });
-
-            function executeSuccessfulCompilation() {
-                loaderOverlay.classList.remove('active');
-
-                const segmentVal = metaInputs.segment.value.trim();
-                const setIdVal = metaInputs.set_id.value.trim();
-                const hubVal = metaInputs.hub.value.trim();
-                const tagVal = metaInputs.tag.value.trim();
-
-                const rows = Array.from(questionInputWrapper.querySelectorAll('.question-row'));
-                const problemsArray = rows.map((row, idx) => {
-                    const plainStmt = cleanStatementText(row.querySelector('.q-statement-input').value);
-                    const latexStmt = convertPlainToLatex(plainStmt);
-                    const ansVal = row.querySelector('.q-answer-input').value.trim();
-
-                    return {
-                        q_index: idx + 1,
-                        statement_plain: plainStmt,
-                        statement_latex: latexStmt,
-                        answer: ansVal
-                    };
-                });
-
-                const goldenPayload = {
-                    schema_version: "1.0",
-                    ecosystem: "Arithmo-Edge",
-                    category: "Expert",
-                    segment: segmentVal,
-                    set_id: setIdVal,
-                    hub: hubVal,
-                    tag: tagVal,
-                    problem_count: 10,
-                    problems: problemsArray
-                };
-
-                const sanitizePart = str => str.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_\-]/g, '');
-                lastGeneratedFilename = `${sanitizePart(segmentVal)}_${sanitizePart(tagVal)}_${sanitizePart(setIdVal)}.json`;
-
-                const compiledJson = JSON.stringify(goldenPayload, null, 2);
-                codeOutput.textContent = compiledJson;
-
-                formSection.style.display = 'none';
-                formSection.classList.remove('blurred');
-                outputCard.style.display = 'block';
-                setTimeout(() => {
-                    outputCard.classList.add('visible');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }, 50);
-
-                setTimeout(() => {
-                    isGenerating = false;
-                    checkFormValidation();
-                }, 500);
-            }
-
-            // 7. REAL-TIME REFRESH INTEGRATION & ALERT MESSAGE
-            btnRefreshAll.addEventListener('click', () => {
-                const hasMetaValue = Object.values(metaInputs).some(el => el.value.trim() !== '');
-                const rows = Array.from(questionInputWrapper.querySelectorAll('.question-row'));
-                const hasQuestionValue = rows.some(r =>
-                    r.querySelector('.q-statement-input').value.trim() !== '' ||
-                    r.querySelector('.q-answer-input').value.trim() !== ''
-                );
-
-                if (!hasMetaValue && !hasQuestionValue && rows.length === 1) return;
-
-                const refreshConfirmed = confirm("Are you sure you want to reset and clear all fields?");
-                if (!refreshConfirmed) return;
-
-                Object.values(metaInputs).forEach(el => {
-                    el.value = '';
-                    el.classList.remove('valid', 'invalid');
-                });
-                document.querySelectorAll('.error-msg').forEach(msg => msg.style.display = 'none');
-
-                initializeQuestions();
-                checkFormValidation();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-
-                const originalText = btnRefreshAll.innerHTML;
-                btnRefreshAll.innerHTML = 'REFRESHED! 🔄';
-                btnRefreshAll.style.boxShadow = '0 0 20px #A855F7';
-
-                setTimeout(() => {
-                    btnRefreshAll.innerHTML = originalText;
-                    btnRefreshAll.style.boxShadow = '';
-                }, 1500);
-            });
-
-            // 8. COPY TO CLIPBOARD UTILITY
-            btnCopy.addEventListener('click', () => {
-                const rawText = codeOutput.textContent;
-                if (!rawText) return;
-
-                navigator.clipboard.writeText(rawText).then(() => {
-                    const originalText = btnCopy.innerHTML;
-                    btnCopy.innerHTML = 'COPIED! ✨';
-                    btnCopy.style.borderColor = 'var(--secondary-neon)';
-                    btnCopy.style.color = 'var(--secondary-neon)';
-                    btnCopy.style.boxShadow = 'var(--shadow-lime)';
-
-                    setTimeout(() => {
-                        btnCopy.innerHTML = originalText;
-                        btnCopy.style.borderColor = '';
-                        btnCopy.style.color = '';
-                        btnCopy.style.boxShadow = '';
-                    }, 1500);
-                });
-            });
-
-            // 9. DOWNLOAD .JSON UTILITY WITH EXACT FILENAME FORMAT
-            btnDownloadJson.addEventListener('click', () => {
-                const rawJson = codeOutput.textContent;
-                if (!rawJson) return;
-
-                const blob = new Blob([rawJson], { type: 'application/json;charset=utf-8' });
-                const url = URL.createObjectURL(blob);
-                const downloadLink = document.createElement('a');
-                downloadLink.href = url;
-                downloadLink.download = lastGeneratedFilename;
-                document.body.appendChild(downloadLink);
-                downloadLink.click();
-                document.body.removeChild(downloadLink);
-                URL.revokeObjectURL(url);
-
-                const originalText = btnDownloadJson.innerHTML;
-                btnDownloadJson.innerHTML = 'DOWNLOADED! ✅';
-                setTimeout(() => {
-                    btnDownloadJson.innerHTML = originalText;
-                }, 1500);
-            });
-
-            // 10. REGENERATE RESET CONTROL
-            btnGenerateAgain.addEventListener('click', () => {
-                outputCard.classList.remove('visible');
-                setTimeout(() => {
-                    outputCard.style.display = 'none';
-                    codeOutput.textContent = '';
-                    formSection.style.display = 'block';
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }, 300);
-
-                checkFormValidation();
-            });
-
-            // Initial UI Setup
-            initializeQuestions();
-            checkFormValidation();
-        });
-    </script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
