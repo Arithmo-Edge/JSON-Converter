@@ -6,7 +6,7 @@
     <!-- ======================================================================= -->
 
     <!-- 1. Core Encoding, Viewport & Primary SEO Metadata -->
-    <meta charset="UTF-8"  />
+    <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
@@ -29,8 +29,8 @@
     <meta name="copyright" content="© Arithmo-Edge. All Rights Reserved." />
 
     <!-- 2. Search Engine Indexing & Security Directives (Private Internal Authoring Tool) -->
-    <meta name="robots" content="index, follow, archive, snippet" />
-    <meta name="googlebot" content="index, follow" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="googlebot" content="noindex, nofollow" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- 3. Cyber-Olympiad Browser Chrome & PWA App Capabilities -->
@@ -83,29 +83,136 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Arithmo-Edge: Golden Question Bank JSON Generator",
-        "alternateName": "Arithmo Golden Vault Compiler v1.2",
-        "applicationCategory": "EducationalApplication",
-        "operatingSystem": "All (Web Browser)",
-        "description": "Precision authoring utility designed for the Arithmo-Edge competitive mathematics ecosystem to compile 10-problem Expert Olympiad sets with automated LaTeX conversion, per-question unrated tags, and single-value deterministic answers.",
-        "author": {
-          "@type": "Person",
-          "name": "Rayaan Tasnim",
-          "jobTitle": "Founder & Chief System Architect"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Arithmo-Edge",
-          "slogan": "Powered by Olympiad Edge"
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        }
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization",
+            "name": "Arithmo-Edge",
+            "alternateName": "Olympiad Edge",
+            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+            "logo": "https://arithmo-edge.github.io/Introductory-Landing-Page/favicon.jpg",
+            "email": "rayaantasnim@gmail.com",
+            "areaServed": "Worldwide",
+            "founder": [
+              {
+                "@type": "Person",
+                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#rayaan-tasnim",
+                "name": "Rayaan Tasnim",
+                "jobTitle": "Founder & Chief System Architect",
+                "email": "rayaantasnim@gmail.com",
+                "sameAs": [
+                  "https://github.com",
+                  "https://github.com/Arithmo-Edge"
+                ]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#jalees-habib",
+                "name": "Jalees Habib",
+                "jobTitle": "Co-Founder & Chief Mathematical Engineer",
+                "sameAs": [
+                  "https://www.youtube.com/@jaleeshabib",
+                  "https://www.chess.com/member/jaiees"
+                ]
+              }
+            ],
+            "sameAs": [
+              "https://github.com",
+              "https://github.com/Arithmo-Edge",
+              "https://www.youtube.com/@jaleeshabib",
+              "https://www.chess.com/member/jaiees",
+              "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website",
+            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+            "name": "Arithmo-Edge",
+            "alternateName": "Olympiad Edge",
+            "description": "The World's First Real-Time ELO-Rated Competitive Mathematics & Olympiad Mega-Ecosystem, Powered by Olympiad Edge.",
+            "inLanguage": "en-US",
+            "publisher": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://arithmo-edge.github.io/Introductory-Landing-Page/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://arithmo-edge.github.io/JSON-Converter/#webpage",
+            "url": "https://arithmo-edge.github.io/JSON-Converter/",
+            "name": "Arithmo-Edge: Golden Question Bank JSON Generator | Schema v1.2 Tool",
+            "description": "Author and compile standardized competitive mathematics problem sets into Schema v1.2 JSON payloads for Arithmo-Edge (powered by Olympiad Edge) with automated KaTeX/LaTeX conversion, 5 core arenas, 4 calibrated difficulty tiers (Apprentice, Intermediate, Vanguard, Apex), strict 10-question matrix enforcement (q_index 1-10), contest-security flags (hidden_during_live_contest: true), and zero-friction export.",
+            "inLanguage": "en-US",
+            "isPartOf": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website"
+            },
+            "about": {
+              "@id": "https://arithmo-edge.github.io/JSON-Converter/#json-converter-app"
+            },
+            "publisher": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://arithmo-edge.github.io/JSON-Converter/#json-converter-app"
+            },
+            "breadcrumb": {
+              "@id": "https://arithmo-edge.github.io/JSON-Converter/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://arithmo-edge.github.io/JSON-Converter/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://arithmo-edge.github.io/Introductory-Landing-Page/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Golden Question Bank JSON Generator",
+                "item": "https://arithmo-edge.github.io/JSON-Converter/"
+              }
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://arithmo-edge.github.io/JSON-Converter/#json-converter-app",
+            "name": "Arithmo-Edge: Golden Question Bank JSON Generator",
+            "alternateName": "Arithmo-Edge JSON Converter",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Web",
+            "softwareVersion": "Schema v1.2",
+            "url": "https://arithmo-edge.github.io/JSON-Converter/",
+            "creator": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#rayaan-tasnim"
+            },
+            "provider": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "description": "Specialized browser-based authoring and compilation tool built to standardize competitive mathematics problem sets for the Arithmo-Edge Olympiad ecosystem (powered by Olympiad Edge). Transforms raw mathematical problems into validated, production-ready Schema v1.2 JSON payloads complete with automated KaTeX/LaTeX formatting, difficulty segmentation across 5 core arenas (Number Theory, Algebra, Geometry, Combinatorics & Permutation, and Mixed Mathematical Olympiad) and 4 calibrated ELO difficulty tiers (Apprentice, Intermediate, Vanguard, and Apex), strict 10-problem matrix enforcement (q_index 1-10) with deterministic single-value answers and dual plain-text/LaTeX representations, per-question topic tags with hidden_during_live_contest: true to prevent topic spoilers during live rated contests, and zero-friction one-click clipboard copy and .json download for ingestion into the private Arithmo-Edge-Golden-Vault CI/CD verification pipeline (SymPy verification, plagiarism gating, and Cloudflare Worker edge delivery). Built with HTML5, CSS3, and Vanilla JavaScript on GitHub Pages.",
+            "featureList": [
+              "Structured Metadata Configuration: Organizes problem sets across 5 core Olympiad arenas (Number Theory, Algebra, Geometry, Combinatorics & Permutation, and Mixed Mathematical Olympiad) and 4 calibrated ELO difficulty tiers (Apprentice, Intermediate, Vanguard, and Apex)",
+              "Strict 10-Problem Matrix Enforcement: Guides authors through building standardized 10-question sets (q_index 1-10) with deterministic single-value answers and dual plain-text/LaTeX representations",
+              "Automated LaTeX Conversion & Tagging: Converts mathematical expressions into KaTeX-ready syntax and attaches per-question topic tags configured with hidden_during_live_contest: true to stay hidden during live rated contests and prevent topic spoilers",
+              "Zero-Friction Export: Compiles payloads directly in the browser with one-click clipboard copying and .json file downloads ready for ingestion into the private Arithmo-Edge-Golden-Vault CI/CD verification pipeline",
+              "Tech Stack & Downstream Pipeline: Built with HTML5, CSS3, and Vanilla JavaScript hosted on GitHub Pages using custom Schema v1.2 JSON designed for SymPy verification, plagiarism gating, and Cloudflare Worker edge delivery"
+            ]
+          }
+        ]
       }
     </script>
+
     <!-- ======================================================================= -->
 
     <title>Arithmo-Edge: Golden Question Bank JSON Generator</title>
